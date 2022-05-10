@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    background-color: #f6e4ef;
+
+}
+
+.footer-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(253, 202, 210);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-company-footer {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 12px;
+}
+
+.menu {
+    width: 80%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu > li {
+}
+
+li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+li > a:hover {
+    color: rgb(97, 92, 92);
+    border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+
