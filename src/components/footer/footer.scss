@@ -13,9 +13,11 @@
     align-items: center;
 }
 
-.name-company-footer {
-    font-style: italic;
-    font-size: 16px;
+.footer-wrapper {
+    p {
+        font-style: italic;
+        font-size: 16px;
+    }
 }
 
 .copyright {
@@ -23,7 +25,7 @@
     font-size: 12px;
 }
 
-.menu {
+.menu-footer {
     width: 80%;
     margin: 50px 0;
     display: flex;
@@ -32,17 +34,19 @@
     list-style-type: none;
 }
 
-.menu > li {
-}
-
-li > a {
+.menu-footer-item > a {
     text-decoration: none;
     color: #000;
+
+    &:hover {
+        color: rgb(97, 92, 92);
+        border-bottom: 1px solid rgb(71, 71, 71);
+    }
 }
 
-li > a:hover {
-    color: rgb(97, 92, 92);
-    border-bottom: 1px solid rgb(71, 71, 71);
-}
+// .menu-footer-item > a:hover {
+//     color: rgb(97, 92, 92);
+//     border-bottom: 1px solid rgb(71, 71, 71);
+// }
 
 
