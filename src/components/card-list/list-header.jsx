@@ -1,6 +1,6 @@
-import './card-list-item.scss';
+import './list-header.scss';
 
-const CardListItem = () => {
+const ListHeader = () => {
     return (
         <div className="card-item-wrapper">
             
@@ -8,14 +8,8 @@ const CardListItem = () => {
             <span>[Транскрипция]</span>
             <span>Перевод слова</span>
             <span>Тема.</span>
-            <div>
-                <button className="card-btn" type="button">
-                        <img src="/img/edit.png" alt="edit" />
-                </button>
-                <button className="card-btn" type="button">
-                        <img src="/img/delete.png" alt="delete" />
-                </button>
-            </div>
+            <div></div>
+            
 
 
 
@@ -28,4 +22,5 @@ const CardListItem = () => {
     )
 }
 
-export default CardListItem;
+export default ListHeader;
+

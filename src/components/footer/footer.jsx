@@ -12,16 +12,16 @@ const Footer = () => {
 
                 <ul className="menu-footer">
                     <li className="menu-footer-item">
-                        <a href="#">Home</a>
+                        <a href="/#">Home</a>
                     </li>
                     <li className="menu-footer-item">
-                        <a href="#">Terms of Service</a>
+                        <a href="/#">Terms of Service</a>
                     </li>
                     <li className="menu-footer-item">
-                        <a href="#">Privacy Statement</a>
+                        <a href="/#">Privacy Statement</a>
                     </li>
                     <li className="menu-footer-item">
-                        <a href="#">Contact</a>
+                        <a href="/#">Contact</a>
                     </li>
                 </ul>
             </div>

@@ -1,14 +1,16 @@
-import './card-list-item.scss';
+import './add-new-word.scss';
 
-const CardListItem = () => {
+const AddNewWord = () => {
     return (
-        <div className="card-item-wrapper">
-            
-            <span>Слово на англ</span>
-            <span>[Транскрипция]</span>
-            <span>Перевод слова</span>
-            <span>Тема.</span>
+        <div className="add-word-wrapper">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            {/* тема через выпадающий список */}
             <div>
+            <button className="card-btn" type="button">
+                        <img src="/img/add-word.png" alt="add-word" />
+                </button>
                 <button className="card-btn" type="button">
                         <img src="/img/edit.png" alt="edit" />
                 </button>
@@ -16,6 +18,7 @@ const CardListItem = () => {
                         <img src="/img/delete.png" alt="delete" />
                 </button>
             </div>
+            
 
 
 
@@ -28,4 +31,5 @@ const CardListItem = () => {
     )
 }
 
-export default CardListItem;
+export default AddNewWord;
+
