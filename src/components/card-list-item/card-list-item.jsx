@@ -8,14 +8,14 @@ const CardListItem = () => {
             <span>[Транскрипция]</span>
             <span>Перевод слова</span>
             <span>Тема.</span>
-            <div>
+            <span className="bnt-box">
                 <button className="card-btn" type="button">
-                        <img src="/img/edit.png" alt="edit" />
+                    <img src="/img/edit.png" alt="edit" />
                 </button>
                 <button className="card-btn" type="button">
-                        <img src="/img/delete.png" alt="delete" />
+                    <img src="/img/delete.png" alt="delete" />
                 </button>
-            </div>
+            </span>
 
 
 

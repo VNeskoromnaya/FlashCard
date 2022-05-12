@@ -15,15 +15,19 @@
 
 .footer-wrapper {
     p {
+        margin-top: 30px;
         font-style: italic;
         font-size: 16px;
     }
+
+    .copyright {
+        margin: 0;
+        font-size: 12px;
+        text-decoration: overline;
+    }
 }
 
-.copyright {
-    margin: 0;
-    font-size: 12px;
-}
+
 
 .menu-footer {
     width: 80%;
