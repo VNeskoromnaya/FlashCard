@@ -1,6 +1,6 @@
 .card {
-    width: 50%;
-    margin: 30px auto;
+    width: 40%;
+    margin: 100px auto;
     border: 3px solid rgb(246,164,188);
     background-color: #f6f0ef;
     border-radius: 20px;
@@ -29,12 +29,21 @@
         width: 20px;
         height: 20px;
     }
+
+    .card-btn.save {
+        // visibility: hidden;
+        
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 .word {
     margin-top: 100px;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .transcription {
@@ -43,10 +52,27 @@
     color: rgb(95, 93, 93);
 }
 
-.translation {
-    margin-top: 50px;
-    font-size: 25px;
-    font-style: italic;
+.translation-wrapper {
+    margin: 50px auto;
+    width: 50%;
+    
+    .btn-translation {
+        // display: none;
+        width: 100%;
+        height: 65px;
+        font-size: 18px;
+        background-color:#ffd7dd;
+    }
+
+    &:hover {
+        box-shadow: 7px 7px 11px 1px rgb(100 94 137 / 25%);
+    }
+
+    .translation {
+        display: none;
+        font-size: 30px;
+        font-style: italic;
+    }
 }
 
 .topic {

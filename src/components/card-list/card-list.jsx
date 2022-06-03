@@ -87,7 +87,7 @@ const words = [
 function CardList(props) {
     return (
         <Table bordered hover className="table">
-            <thead>
+            <thead className="table-head">
                 <tr>
                     <th>Слово</th>
                     <th>Транскрипция</th>
@@ -99,11 +99,23 @@ function CardList(props) {
             <tbody>
                 {words.map((word, index) =>
                     <tr className="table-row" key={index}>
-                        <td className="cell">{word.word}</td>
-                        <td className="cell">{word.transcription}</td>
-                        <td className="cell">{word.translation}</td>
-                        <td className="cell">{word.category}</td>
+                        <td className="cell">
+                            <input type="text" className="cell-input" defaultValue={word.word} disabled />
+                        </td>
+                        <td className="cell">
+                            <input type="text" className="cell-input" defaultValue={word.transcription} disabled />
+                        </td>
+                        <td className="cell">
+                            <input type="text" className="cell-input" defaultValue={word.translation} disabled />
+                        </td>
+                        <td className="cell">
+                            {/* !!! тут хочу реализовать выпадающий список категория */}
+                            <input type="text" className="cell-input" defaultValue={word.category} disabled />  
+                        </td>
                         <td className="btn-block">
+                            <button className="card-btn save" type="button">
+                                <img src="/img/save.png" alt="edit" />
+                            </button>
                             <button className="card-btn" type="button">
                                 <img src="/img/edit.png" alt="edit" />
                             </button>

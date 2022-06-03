@@ -1,13 +1,14 @@
+@import '../variables';
+
 .header {
     width: 100%;
-    background-color: #f6e4ef;
-
+    background-color: $backgroundColor;
 }
 
 .header-wrapper {
     width: 80%;
     margin: 0 auto;
-    background-color: rgb(253, 202, 210);
+    background-color: $mainBackgroundColor;
     display: flex;
     flex-direction: row;
     align-items: flex-end;

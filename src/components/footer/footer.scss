@@ -1,13 +1,15 @@
+@import '../variables';
+
 .footer {
     width: 100%;
-    background-color: #f6e4ef;
+    background-color: $backgroundColor;
 
 }
 
 .footer-wrapper {
     width: 80%;
     margin: 0 auto;
-    background-color: rgb(253, 202, 210);
+    background-color: $mainBackgroundColor;
     display: flex;
     flex-direction: column;
     align-items: center;
