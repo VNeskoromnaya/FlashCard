@@ -47,7 +47,10 @@
     }
 
     .card-btn.save {
-        visibility: hidden;
+        
+        &.hidden {
+            visibility: hidden;
+        }
         
         img {
             width: 20px;

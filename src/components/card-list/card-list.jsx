@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {Table} from 'react-bootstrap';
 
 // import CardListItem from "../card-list-item/card-list-item";
@@ -85,6 +86,17 @@ const words = [
 // const words = JSON.parse(fs.readFileSync('./data.json'));
 
 function CardList(props) {
+
+    const [editable, setEditable] = useState();
+
+    const setEditableRow = (index) => {
+        setEditable(index);
+    };
+
+    const saveData = (index) => {
+        setEditable();
+    };
+
     return (
         <Table bordered hover className="table">
             <thead className="table-head">
@@ -100,23 +112,44 @@ function CardList(props) {
                 {words.map((word, index) =>
                     <tr className="table-row" key={index}>
                         <td className="cell">
-                            <input type="text" className="cell-input" defaultValue={word.word} disabled />
+                            <input type="text" 
+                                className="cell-input" 
+                                name="engWord"
+                                defaultValue={word.word}
+                                // onChange={handleChange}
+                                // onChange={onValueChange} 
+                                disabled={editable !== index}
+                                />
                         </td>
                         <td className="cell">
-                            <input type="text" className="cell-input" defaultValue={word.transcription} disabled />
+                            <input type="text" 
+                                className="cell-input" 
+                                name="transcription"
+                                defaultValue={word.transcription} 
+                                disabled={editable !== index}
+                                />
                         </td>
                         <td className="cell">
-                            <input type="text" className="cell-input" defaultValue={word.translation} disabled />
+                            <input type="text" 
+                                className="cell-input" 
+                                name="rusWord"
+                                defaultValue={word.translation} 
+                                disabled={editable !== index}
+                                />
                         </td>
                         <td className="cell">
                             {/* !!! тут хочу реализовать выпадающий список категория */}
-                            <input type="text" className="cell-input" defaultValue={word.category} disabled />  
+                            <input type="text" 
+                                className="cell-input" 
+                                defaultValue={word.category} 
+                                disabled={editable !== index}
+                                />  
                         </td>
                         <td className="btn-block">
-                            <button className="card-btn save" type="button">
+                            <button className={ `card-btn save ${editable === index ? '' : ' hidden'}` } name="save" type="button" onClick={() => { saveData(index); }}>
                                 <img src="/img/save.png" alt="edit" />
                             </button>
-                            <button className="card-btn" type="button">
+                            <button className="card-btn" type="button" onClick={() => { setEditableRow(index); }}>
                                 <img src="/img/edit.png" alt="edit" />
                             </button>
                             <button className="card-btn" type="button">
